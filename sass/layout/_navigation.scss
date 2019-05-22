@@ -1,0 +1,40 @@
+.navigation {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20rem;
+  width: 100%;
+  z-index: 1;
+
+  background-image: linear-gradient(to bottom, rgba(0,0,0,1), rgba(0,0,0,0));
+  mix-blend-mode: soft-light;
+
+  &--list {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+
+  }
+
+  &--item {
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    padding: 1.5rem 3rem;
+  }
+
+  &--link {
+
+    &,
+    &:visited,
+    &:link {
+      text-decoration: none;
+      color: $secondary-blue;
+      transition: all .3s;
+
+      &:hover {
+        color: $white;
+      }
+    }
+  }
+}

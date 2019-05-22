@@ -1,0 +1,49 @@
+.hero {  
+  position: relative;
+  height: 100vh;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba($primary-blue, 1) 100%),
+                    url(../img/world.jpg);
+  mix-blend-mode: lighten;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  will-change: opacity;
+
+  color: $white;
+  text-align: center;
+
+  &--container {
+    padding: 3rem 0;
+    display: grid;
+    grid-template-rows: 1fr min-content min-content;
+    grid-template-columns: minmax(min-content, max-content);
+    grid-row-gap: 3rem;
+    justify-content: center;
+    height: 70vh;
+  }
+  
+  &--logo {
+    font-weight: normal;
+    font-size: 5.5rem;
+    letter-spacing: -4px;
+  }
+  
+  &--phrase {
+    font-size: 4.5rem;
+    font-weight: normal;
+    line-height: 1.5;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+    &__strong {
+      font-size: 6rem;
+      font-weight: 500;
+    }
+  }
+
+  &__btn {
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 3rem;
+  }
+}
