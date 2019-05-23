@@ -13,8 +13,15 @@ html {
 body {
   box-sizing: border-box;
   height: 900rem;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   background-color: $primary-blue;
+}
+
+hr {
+  height: 5px;
+  border: none;
+  color: $white;
+  background-image: linear-gradient(to right, rgba(0,0,0,0) 5%, rgba($secondary-blue, 1) 50%, rgba(0,0,0,0) 95%);
 }
 
 .container {
@@ -25,7 +32,7 @@ body {
   background-color: $primary-blue;
 }
 
-#particles-js canvas{
+#particles-js canvas {
   position: absolute;
   top: 0;
   left: 0;

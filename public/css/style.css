@@ -11,8 +11,14 @@ html {
 body {
   box-sizing: border-box;
   height: 900rem;
-  font-family: 'Rubik', sans-serif;
+  font-family: "Rubik", sans-serif;
   background-color: #07274e; }
+
+hr {
+  height: 5px;
+  border: none;
+  color: #ffffff;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0) 5%, #abc0da 50%, rgba(0, 0, 0, 0) 95%); }
 
 .container {
   padding: 3rem 8rem; }
@@ -79,17 +85,21 @@ body {
   cursor: pointer; }
 
 .btn:hover {
-  transform: translateY(-3px);
+  transform: translateY(-4px);
   box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+
+.btn:active {
+  transform: translateY(-2px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  border-bottom-color: currentColor; }
 
 .btn__primary {
   background-color: #ABC0DA;
-  border: 1px solid #ABC0DA;
+  border-bottom: 1px solid #ABC0DA;
   color: #07274e; }
   .btn__primary:hover {
     background-color: #07274e;
-    color: #ffffff;
-    border: 1px solid #ABC0DA; }
+    color: #ffffff; }
 
 .navigation {
   position: absolute;
