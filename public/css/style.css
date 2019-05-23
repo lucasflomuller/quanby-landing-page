@@ -50,7 +50,8 @@ body {
   .hero--logo {
     font-weight: normal;
     font-size: 5.5rem;
-    letter-spacing: -4px; }
+    letter-spacing: -4px;
+    margin-top: 5rem; }
   .hero--phrase {
     font-size: 4.5rem;
     font-weight: normal;
@@ -120,5 +121,5 @@ body {
   position: relative;
   z-index: 1;
   border-radius: 3.6rem;
-  margin-top: -10vh;
+  margin-top: -15vh;
   padding-top: 3rem; }
