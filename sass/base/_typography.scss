@@ -1,0 +1,21 @@
+%block-heading {
+  text-transform: uppercase;
+  display: block;
+  text-align: center;
+}
+
+.heading-secondary {
+}
+
+.heading-tertiary {
+  @extend %block-heading;
+  font-size: 3rem;
+  font-weight: 500;
+  background-image: linear-gradient(to bottom, $primary-blue, $secondary-blue 200%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.heading-quartiary {
+}

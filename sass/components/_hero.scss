@@ -1,5 +1,6 @@
 .hero {  
   position: relative;
+  grid-column: 1 / 4;
   height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0,0,0,0) 80%, rgba($primary-blue, 1) 100%),
                     url(../img/world.jpg);

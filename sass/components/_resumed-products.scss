@@ -1,0 +1,61 @@
+.resumed-products {
+  padding-bottom: 4rem;
+  display: grid;
+  grid-template-columns: 1fr repeat(auto-fill, minmax(30rem, 1fr));
+  row-gap: 2rem;
+
+  &--header {
+    grid-column: 1 / 4;
+  }
+
+  &--product {
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+    row-gap: 1rem;
+    align-items: start;
+    justify-items: center;
+
+    h5 {
+      margin-top: .5rem;  
+      margin-bottom: 1.2rem;
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.6;
+      text-transform: uppercase;
+      text-align: center;
+      background-image: linear-gradient(
+        to bottom,
+        $primary-blue,
+        $secondary-blue 200%
+      );
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    h5 i::before {
+      background-image: linear-gradient(
+        to bottom,
+        $primary-blue,
+        $secondary-blue 200%
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      display: initial;
+    }
+
+    p {
+      margin: 0 1rem;
+      text-align: center;
+      grid-row: 2 / 3;
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 1.4;
+      color: $dark-grey-1;
+    }
+
+    a {
+      margin-top: 1.5rem;
+    }
+  }
+}
