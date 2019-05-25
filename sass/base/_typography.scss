@@ -18,4 +18,10 @@
 }
 
 .heading-quartiary {
+  font-size: 2.5rem;
+  font-weight: 500;
+  background-image: linear-gradient(to bottom, $primary-blue, $secondary-blue 200%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
