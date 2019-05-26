@@ -40,10 +40,18 @@ p {
   height: 100%;
   z-index: -1; }
 
-.heading-tertiary {
+.heading-secondary, .heading-tertiary {
   text-transform: uppercase;
   display: block;
   text-align: center; }
+
+.heading-secondary {
+  font-size: 3rem;
+  font-weight: normal;
+  background-image: linear-gradient(to bottom, #60B8FF, #ffffff 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent; }
 
 .heading-tertiary {
   font-size: 3rem;
@@ -60,6 +68,9 @@ p {
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent; }
+
+.align-right {
+  text-align: right; }
 
 .hero {
   position: relative;
@@ -171,6 +182,29 @@ p {
 .article {
   padding: 4rem 0; }
 
+.products--image {
+  width: 35rem;
+  height: auto;
+  padding: 3rem 7rem;
+  align-self: center;
+  justify-self: center;
+  margin-top: -6rem; }
+
+.products h4 {
+  margin-top: 4rem; }
+  .products h4:not(:first-child) {
+    margin-top: 10rem; }
+
+.products > [class^="products--"] {
+  display: flex; }
+
+.products--security {
+  flex-flow: row;
+  margin-bottom: 4rem; }
+
+.products--personal-dev {
+  flex-direction: row-reverse; }
+
 .navigation {
   grid-column: 2 / 3;
   position: absolute;
@@ -202,6 +236,7 @@ p {
   position: relative;
   z-index: 1;
   border-radius: 3.6rem;
+  max-width: 128rem;
+  margin: 0 auto;
   margin-top: -15vh;
-  padding-top: 5rem;
   padding: 4rem 5rem; }

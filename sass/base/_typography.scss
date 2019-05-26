@@ -5,6 +5,13 @@
 }
 
 .heading-secondary {
+  @extend %block-heading;
+  font-size: 3rem;
+  font-weight: normal;
+  background-image: linear-gradient(to bottom, $ice-blue, $white 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .heading-tertiary {

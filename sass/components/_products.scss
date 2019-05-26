@@ -1,0 +1,36 @@
+.products {
+
+  &--image {
+    width: 35rem;
+    height: auto;
+    padding: 3rem 7rem;
+    align-self: center;
+    justify-self: center;
+    margin-top: -6rem;
+  }
+
+  h4 {
+    // margin-top: 3rem;
+    margin-top: 4rem;
+    
+    &:not(:first-child) {
+      margin-top: 10rem;
+    }
+  }
+
+  & > [class^="products--"] {
+    display: flex;
+  }
+
+  &--security {
+    flex-flow: row;
+    margin-bottom: 4rem;
+  }
+
+  &--personal-dev {
+    flex-direction: row-reverse;
+  }
+
+  &--linear-systems {
+  }
+}
