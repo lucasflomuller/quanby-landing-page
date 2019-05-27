@@ -23,7 +23,8 @@ ORDER: Base + typography > general layout + grid > page layout > components
   box-sizing: inherit; }
 
 html {
-  font-size: 62.5%; }
+  font-size: 62.5%;
+  height: 100%; }
   @media only screen and (max-width: 75em) {
     html {
       font-size: 56.25%; } }
@@ -36,6 +37,7 @@ html {
 
 body {
   box-sizing: border-box;
+  height: 100%;
   font-family: "Rubik", sans-serif;
   background-color: #07274e;
   font-size: 1.5rem;
@@ -321,13 +323,13 @@ p {
   border-radius: 3.6rem;
   max-width: 113rem;
   margin: 0 auto;
-  margin-top: -15vh;
   padding: 4rem 5rem; }
   @media only screen and (max-width: 56.25em) {
     .main-card {
       border-radius: 0;
       padding: 15rem 5rem;
-      margin-top: -30vh; } }
+      -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 10vh, 100% 0, 100% 98%, 0 100%); } }
 
 .footer {
   display: flex;
