@@ -1,3 +1,57 @@
 .footer {
-  
+  display: flex;
+  flex-flow: column;
+  width: 100%;
+  position: relative;
+
+  // &--back-to-top {
+  //   flex: 0 0 5%;
+  //   text-align: center;
+  //   background-color: $white;
+  // }
+
+  &--logo {
+    font-weight: normal;
+    font-size: 5.5rem;
+    letter-spacing: -4px;
+    margin: 5rem 0;
+    text-align: center;
+    color: $dark-grey-3;
+  }
+
+  &--contact {
+    flex: 0 0 100%;
+    padding: 5% 10%;
+    text-decoration: none;
+    color: $dark-grey-3;
+
+    &-info {
+      address {
+      }
+
+      .number {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+
+      .email {
+        font-size: 1.6rem;
+        font-weight: 500;
+      }
+    }
+
+    a,
+    a:link,
+    a:visited {
+      text-decoration: none;
+      color: $dark-grey-3;
+      letter-spacing: 2px;
+    }
+
+    .media,
+    .media:link,
+    .media:visited {
+      float: right;
+    }
+  }
 }

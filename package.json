@@ -5,9 +5,14 @@
   "main": "index.js",
   "scripts": {
     "watch:sass": "node-sass sass/index.scss public/css/style.css -w",
-    "start": "nodemon --watch src index.js",
+    "start": "node index.js",
     "dev": "concurrently \"npm run start\" \"npm run watch:sass\"",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/index.scss public/css/style.comp.css",
+    "concat:css": "concat -o public/css/style.concat.css public/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' public/css/style.concat.css -o public/css/style.prefix.css",
+    "compress:css": "node-sass public/css/style.prefix.css public/css/style.css --output-style compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
   "keywords": [],
   "author": "Lucas Muller",
@@ -19,6 +24,10 @@
   "devDependencies": {
     "concurrently": "^4.1.0",
     "node-sass": "^4.12.0",
-    "nodemon": "^1.19.0"
+    "nodemon": "^1.19.0",
+    "autoprefixer": "^7.1.4",
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.1",
+    "postcss-cli": "^4.1.1"
   }
 }
