@@ -7,15 +7,14 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  // margin-bottom: -20vh;
   will-change: opacity;
 
   color: $white;
   text-align: center;
 
-  @include respond(phone) {
-    height: 75vh;
-  }
+  // @include respond(phone) {
+  //   height: 75vh;
+  // }
 
   &--container {
     padding: 3rem 0;
