@@ -23,7 +23,9 @@
     border-bottom-color: currentColor;
   }
 
-  &__primary {
+  &__primary,
+  &__primary:link,
+  &__primary:visited {
     background-color: $secondary-blue;
     border-bottom: 1px solid $secondary-blue;
     color: $primary-blue;
@@ -35,7 +37,9 @@
     }
   }
 
-  &__small {
+  &__small,
+  &__small:link,
+  &__small:visited {
     font-size: 1.8rem;
     padding: 0 3rem;
   }

@@ -18,9 +18,9 @@
 
     <nav class="navigation">
       <ul class="navigation--list">
-        <li class="navigation--item"><a href="#" class="navigation--link">About us</a></li>
-        <li class="navigation--item"><a href="#" class="navigation--link">Our products</a></li>
-        <li class="navigation--item"><a href="#" class="navigation--link">Contact us</a></li>
+        <li class="navigation--item"><a href="#about" class="navigation--link">About us</a></li>
+        <li class="navigation--item"><a href="#our-products" class="navigation--link">Our products</a></li>
+        <li class="navigation--item"><a href="#contact" class="navigation--link">Contact us</a></li>
       </ul>
     </nav>
 
@@ -32,7 +32,7 @@
         <h2 class="hero--phrase">Are you prepared for <br>
           <span class="hero--phrase__strong">quantum revolution?</span>
         </h2>
-        <a class="btn btn__primary hero__btn">Find out more</a>
+        <a href="#quantum-revolution" class="btn btn__primary hero__btn">Find out more</a>
         <hr>
       </div>
     </div>
@@ -41,7 +41,7 @@
     <main class="main-card">
       <!-- <div class="container"> -->
       <h3 class="resumed-products--header heading-tertiary">Our products</h3>
-      <section class="resumed-products">
+      <section id="our-products" class="resumed-products">
         <div class="resumed-products--product">
           <h5>
             <i class="fas fa-lock"></i><br>
@@ -50,7 +50,7 @@
           <p>
             We keep your company up to date with the most modern post-quantum cryptography technologies
           </p>
-          <a class="btn btn__primary btn__small">+</a>
+          <a href="#security" class="btn btn__primary btn__small">+</a>
         </div>
         <div class="resumed-products--product">
           <h5>
@@ -61,7 +61,7 @@
             Personalized solutions for every industry field, we make from your problems ours and solve them through
             quantum computing
           </p>
-          <a class="btn btn__primary btn__small">+</a>
+          <a href="#personal-dev" class="btn btn__primary btn__small">+</a>
         </div>
         <div class="resumed-products--product">
           <h5>
@@ -71,13 +71,13 @@
           <p>
             We keep your company up to date with the most modern post-quantum cryptography technologies
           </p>
-          <a class="btn btn__primary btn__small">+</a>
+          <a href="#linear-systems" class="btn btn__primary btn__small">+</a>
         </div>
       </section>
 
       <hr>
 
-      <article class="article">
+      <article id="quantum-revolution" class="article">
         <h4 class="heading-quartiary">The quantum revolution</h4>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus mollis malesuada. Phasellus
           dignissim,
@@ -103,7 +103,7 @@
       <hr>
 
       <section class="products">
-        <h4 class="heading-quartiary">Security</h4>
+        <h4 id="security" class="heading-quartiary">Security</h4>
         <article class="products--security">
           <div class="products--content">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus mollis malesuada. Phasellus
@@ -132,7 +132,7 @@
           <img class="products--image" src="/img/binary-code.svg" alt="Monitor displaying binary code">
         </article>
 
-        <h4 class="heading-quartiary align-right">Personal development</h4>
+        <h4 id="personal-dev" class="heading-quartiary align-right">Personal development</h4>
         <article class="products--personal-dev align-right">
           <p>Aliquam nec vestibulum enim. Etiam id felis ut mi faucibus iaculis. Nulla lobortis molestie massa ut
             condimentum. Sed at vestibulum massa. Suspendisse nec dui risus. Proin ac ex non quam pulvinar tincidunt
@@ -143,7 +143,7 @@
           <img class="products--image" src="/img/coding.svg" alt="Monitor displaying binary code">
         </article>
 
-        <h4 class="heading-quartiary">Linear systems</h4>
+        <h4 id="linear-systems" class="heading-quartiary">Linear systems</h4>
         <article class="products--linear-systems">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam euismod est ut dui facilisis, et tempor
             sapien
@@ -160,15 +160,15 @@
     </main>
 
     <div class="container">
-      <div id="particles-js-2"></div>
-      <section class="about">
+      <section id="about" class="about">
         <h2 class="heading-secondary">Who we are</h2>
         <p class="about--content">
           First brazilian quantum computing company, focused on developing and implementation of algorithms for quantum
           computers and cryptographical security services.
         </p>
-        <a href="mailto:quanby.quantica@gmail.com" class="btn btn__primary">Contact us</a>
+        <a id="contact" href="mailto:quanby.quantica@gmail.com" class="btn btn__primary">Contact us</a>
       </section>
+      <div id="particles-js-2"></div>
     </div>
 
 

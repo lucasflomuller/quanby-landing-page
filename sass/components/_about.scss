@@ -2,6 +2,7 @@
   text-align: center;
   margin: 8rem auto;
   max-width: 80rem;
+  position: relative;
   z-index: 2;
 
   @include respond(phone) {
