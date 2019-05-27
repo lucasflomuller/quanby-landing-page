@@ -19,6 +19,7 @@
     grid-template-columns: minmax(min-content, max-content);
     grid-row-gap: 3rem;
     justify-content: center;
+    align-content: center;
     height: 70vh;
   }
   
@@ -26,7 +27,11 @@
     font-weight: normal;
     font-size: 5.5rem;
     letter-spacing: -4px;
-    margin-top: 5rem;
+    margin-top: 15rem;
+
+    @include respond(tab-port) {
+      margin-top: 8rem;
+    }
   }
   
   &--phrase {
@@ -36,9 +41,33 @@
     text-transform: uppercase;
     letter-spacing: 5px;
 
+    @include respond(tab-land) {
+      font-size: 4rem;
+    }
+  
+    @include respond(tab-port) {
+      font-size: 3rem;
+    }
+  
+    @include respond(big-desktop) {
+      font-size: 6.5rem;
+    }
+
     &__strong {
       font-size: 6rem;
       font-weight: 500;
+
+      @include respond(tab-land) {
+        font-size: 5rem;
+      }
+    
+      @include respond(tab-port) {
+        font-size: 4rem;
+      }
+    
+      @include respond(big-desktop) {
+        font-size: 8rem;
+      }
     }
   }
 

@@ -15,11 +15,19 @@
     
     &:not(:first-child) {
       margin-top: 10rem;
+      
+      @include respond(phone) {
+        margin-top: 4rem;
+      }
     }
   }
 
   & > [class^="products--"] {
     display: flex;
+
+    @include respond(phone) {
+      flex-flow: column;
+    }
   }
 
   &--security {

@@ -3,9 +3,16 @@
   position: relative;
   z-index: 1;
   border-radius: 3.6rem;
-  // margin: 0 20rem;
-  max-width: 128rem;
+  max-width: 113rem;
   margin: 0 auto;
   margin-top: -15vh;
   padding: 4rem 5rem;
+
+  @include respond(tab-port) {
+    border-radius: 0;
+    padding: 15rem 5rem;
+    margin-top: -30vh;
+    -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(0 10vh, 100% 0, 100% 98%, 0 100%);
+  }
 }

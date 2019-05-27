@@ -1,3 +1,20 @@
+/*
+0 - 600px:      Phone
+600 - 900px:    Tablet portrait
+900 - 1200px:   Tablet landscape
+[1200 - 1800] is where our normal styles apply
+1800px + :      Big desktop
+
+$breakpoint arguement choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+
+ORDER: Base + typography > general layout + grid > page layout > components
+
+1em = 16px
+*/
 *,
 *::after,
 *::before {
@@ -7,6 +24,15 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 75em) {
+    html {
+      font-size: 56.25%; } }
+  @media only screen and (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
 
 body {
   box-sizing: border-box;
@@ -27,6 +53,9 @@ p {
 .container {
   padding: 4rem 15rem;
   position: relative; }
+  @media only screen and (max-width: 37.5em) {
+    .container {
+      padding: 2rem 5rem; } }
 
 .page {
   background-color: #07274e;
@@ -102,21 +131,43 @@ p {
     grid-template-columns: minmax(min-content, max-content);
     grid-row-gap: 3rem;
     justify-content: center;
+    align-content: center;
     height: 70vh; }
   .hero--logo {
     font-weight: normal;
     font-size: 5.5rem;
     letter-spacing: -4px;
-    margin-top: 5rem; }
+    margin-top: 15rem; }
+    @media only screen and (max-width: 56.25em) {
+      .hero--logo {
+        margin-top: 8rem; } }
   .hero--phrase {
     font-size: 4.5rem;
     font-weight: normal;
     line-height: 1.5;
     text-transform: uppercase;
     letter-spacing: 5px; }
+    @media only screen and (max-width: 75em) {
+      .hero--phrase {
+        font-size: 4rem; } }
+    @media only screen and (max-width: 56.25em) {
+      .hero--phrase {
+        font-size: 3rem; } }
+    @media only screen and (min-width: 112.5em) {
+      .hero--phrase {
+        font-size: 6.5rem; } }
     .hero--phrase__strong {
       font-size: 6rem;
       font-weight: 500; }
+      @media only screen and (max-width: 75em) {
+        .hero--phrase__strong {
+          font-size: 5rem; } }
+      @media only screen and (max-width: 56.25em) {
+        .hero--phrase__strong {
+          font-size: 4rem; } }
+      @media only screen and (min-width: 112.5em) {
+        .hero--phrase__strong {
+          font-size: 8rem; } }
   .hero__btn {
     align-self: center;
     justify-self: center;
@@ -153,7 +204,7 @@ p {
 .resumed-products {
   padding-bottom: 4rem;
   display: grid;
-  grid-template-columns: 1fr repeat(auto-fill, minmax(30rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   row-gap: 2rem; }
   .resumed-products--header {
     grid-column: 1 / 4; }
@@ -207,9 +258,15 @@ p {
   margin-top: 4rem; }
   .products h4:not(:first-child) {
     margin-top: 10rem; }
+    @media only screen and (max-width: 37.5em) {
+      .products h4:not(:first-child) {
+        margin-top: 4rem; } }
 
 .products > [class^="products--"] {
   display: flex; }
+  @media only screen and (max-width: 37.5em) {
+    .products > [class^="products--"] {
+      flex-flow: column; } }
 
 .products--security {
   flex-flow: row;
@@ -223,29 +280,33 @@ p {
   margin: 8rem auto;
   max-width: 80rem;
   z-index: 2; }
+  @media only screen and (max-width: 37.5em) {
+    .about {
+      margin: 2rem auto; } }
   .about--content {
     color: #ffffff;
     margin-bottom: 3rem; }
 
 .navigation {
-  grid-column: 2 / 3;
   position: absolute;
   top: 0;
   left: 0;
   height: 20rem;
   width: 100%;
   z-index: 1;
+  padding-top: 2rem;
   background-image: linear-gradient(to bottom, black, rgba(0, 0, 0, 0));
   mix-blend-mode: soft-light; }
   .navigation--list {
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     width: 100%; }
   .navigation--item {
     font-size: 1.6rem;
     text-transform: uppercase;
-    padding: 1.5rem 3rem; }
+    padding: 1.5rem 3rem;
+    text-align: center; }
   .navigation--link, .navigation--link:visited, .navigation--link:link {
     text-decoration: none;
     color: #ABC0DA;
@@ -258,10 +319,17 @@ p {
   position: relative;
   z-index: 1;
   border-radius: 3.6rem;
-  max-width: 128rem;
+  max-width: 113rem;
   margin: 0 auto;
   margin-top: -15vh;
   padding: 4rem 5rem; }
+  @media only screen and (max-width: 56.25em) {
+    .main-card {
+      border-radius: 0;
+      padding: 15rem 5rem;
+      margin-top: -30vh;
+      -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
+      clip-path: polygon(0 10vh, 100% 0, 100% 98%, 0 100%); } }
 
 .footer {
   display: flex;
