@@ -5,13 +5,12 @@
   border-radius: 3.6rem;
   max-width: 113rem;
   margin: 0 auto;
-  margin-top: -15vh;
+  // margin-top: -15vh;
   padding: 4rem 5rem;
 
   @include respond(tab-port) {
     border-radius: 0;
     padding: 15rem 5rem;
-    margin-top: -20rem;
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     // width: 100%;

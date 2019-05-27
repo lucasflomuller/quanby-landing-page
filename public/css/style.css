@@ -123,6 +123,7 @@ p {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  margin-bottom: -20vh;
   will-change: opacity;
   color: #ffffff;
   text-align: center; }
@@ -323,13 +324,11 @@ p {
   border-radius: 3.6rem;
   max-width: 113rem;
   margin: 0 auto;
-  margin-top: -15vh;
   padding: 4rem 5rem; }
   @media only screen and (max-width: 56.25em) {
     .main-card {
       border-radius: 0;
       padding: 15rem 5rem;
-      margin-top: -20rem;
       -webkit-transform: translateZ(0);
       transform: translateZ(0);
       -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
