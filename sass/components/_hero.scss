@@ -13,6 +13,10 @@
   color: $white;
   text-align: center;
 
+  @include respond(phone) {
+    height: 75vh;
+  }
+
   &--container {
     padding: 3rem 0;
     display: grid;
