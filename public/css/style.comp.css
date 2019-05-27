@@ -329,7 +329,7 @@ p {
     .main-card {
       border-radius: 0;
       padding: 15rem 5rem;
-      margin-top: -20rem;
+      margin-top: 0;
       -webkit-clip-path: polygon(0 15vh, 100% 0, 100% 100%, 0 100%);
       clip-path: polygon(0 10vh, 100% 0, 100% 98%, 0 100%); } }
 
