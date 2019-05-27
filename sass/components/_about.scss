@@ -1,6 +1,11 @@
 .about {
-
+  text-align: center;
+  margin: 8rem auto;
+  max-width: 80rem;
+  z-index: 2;
+  
   &--content {
-    
+    color: $white;
+    margin-bottom: 3rem;
   }
 }

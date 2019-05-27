@@ -26,7 +26,8 @@ p {
   margin-top: 2rem; }
 
 .container {
-  padding: 4rem 15rem; }
+  padding: 4rem 15rem;
+  position: relative; }
 
 .page {
   background-color: #07274e;
@@ -39,6 +40,17 @@ p {
   width: 100%;
   height: 100%;
   z-index: -1; }
+
+#particles-js-2 {
+  position: absolute;
+  width: 100%;
+  height: 120%;
+  top: 0;
+  left: 0;
+  -webkit-mask-image: linear-gradient(to bottom, #ffffff, transparent 85%);
+  mask-image: linear-gradient(to top, #ffffff, transparent 30%); }
+  #particles-js-2 canvas {
+    z-index: -1; }
 
 .heading-secondary, .heading-tertiary {
   text-transform: uppercase;
@@ -112,6 +124,7 @@ p {
     margin-bottom: 3rem; }
 
 .btn, .btn:link, .btn:visited {
+  display: inline-block;
   padding: 1.2rem 2.5rem;
   border: none;
   border-radius: 5px;
@@ -204,6 +217,15 @@ p {
 
 .products--personal-dev {
   flex-direction: row-reverse; }
+
+.about {
+  text-align: center;
+  margin: 8rem auto;
+  max-width: 80rem;
+  z-index: 2; }
+  .about--content {
+    color: #ffffff;
+    margin-bottom: 3rem; }
 
 .navigation {
   grid-column: 2 / 3;

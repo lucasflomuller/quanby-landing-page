@@ -160,12 +160,13 @@
       </main>
 
     <div class="container">
+      <div id="particles-js-2"></div>
       <section class="about">
         <h2 class="heading-secondary">Who we are</h2>
         <p class="about--content">
           First brazilian quantum computing company, focused on developing and implementation of algorithms for quantum computers and cryptographical security services.
         </p>
-        <a class="btn btn__primary hero__btn">Contact us</a>
+        <!-- <a class="btn btn__primary hero__btn">Contact us</a> -->
       </section>
 
       <footer class="footer">
@@ -181,6 +182,9 @@
   <script>
     /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
     particlesJS.load('particles-js', 'assets/particlesjs-config.json', function () {
+      console.log('callback - particles.js config loaded');
+    });
+    particlesJS.load('particles-js-2', 'assets/particlesjs-config.json', function () {
       console.log('callback - particles.js config loaded');
     });
   </script>
