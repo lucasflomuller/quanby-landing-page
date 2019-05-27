@@ -314,10 +314,10 @@ p {
     text-align: center; }
   .navigation--link, .navigation--link:visited, .navigation--link:link {
     text-decoration: none;
-    color: #ABC0DA;
+    color: #ffffff;
     transition: all .3s; }
     .navigation--link:hover, .navigation--link:visited:hover, .navigation--link:link:hover {
-      color: #ffffff; }
+      color: #ABC0DA; }
 
 .main-card {
   background-color: #ffffff;
