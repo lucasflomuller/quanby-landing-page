@@ -6,7 +6,7 @@
   "scripts": {
     "watch:sass": "node-sass sass/index.scss public/css/style.css -w",
     "start": "node index.js",
-    "dev": "concurrently \"npm run start\" \"npm run watch:sass\"",
+    "dev": "concurrently \"nodemon index.js\" \"npm run watch:sass\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "compile:sass": "node-sass sass/index.scss public/css/style.comp.css",
     "concat:css": "concat -o public/css/style.concat.css public/css/style.comp.css",

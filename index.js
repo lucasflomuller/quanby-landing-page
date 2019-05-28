@@ -5,7 +5,13 @@ app.use(express.static("public"))
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  res.render("index");
+  const acceptedLang = req.headers["accept-language"];
+
+  if (acceptedLang.includes("pt-BR")) {
+    res.render("index-pt");
+  } else {
+    res.render("index-en");
+  }
 });
 
 const PORT = process.env.PORT || 5000;
